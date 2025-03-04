@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+</head>
+<body>
+    <h1>Contact Me</h1>
+    <form action="mailto:youremail@example.com" method="post" enctype="text/plain">
+        <label for="name">Full Name : </label>
+        <input type="text" id="name" name="fullname" required><br><br>
+        <label for="mail">Email : </label>
+        <input type="text" id="mail" name="mail" required><br><br>
+        <label for="dob">Date of Birth : </label>
+        <input type="date" id="dob" required><br><br>
+        <label for="phone">Contact NO : </label>
+        <input type="tel" id="phone" name="phone" required><br><br>
+        <label for="resume">Resume: </label><br>
+        <input type="file" id="resume" name="resume" required><br><br>
+        <label>Gender: </label><br>
+        <label for="male">Male</label>
+        <input type="radio" id="male" name="gender" value="Male"><br>
+        <label for="female">Female</label>
+        <input type="radio" id="female" name="gender" value="Female"><br>
+        <label for="other">Other</label>
+        <input type="radio" id="other" name="gender" value="Other"><br><br>
+        <label>Preffered Contact Methods : </label><br>
+        <label for="email">Email</label>
+        <input type="checkbox" id="email" name="method" value="Email"><br>
+        <label for="ph">Phone</label>
+        <input type="checkbox" id="ph" name="method" value="Phone"><br>
+        <label for="whatsapp">Whatsapp</label>
+        <input type="checkbox" id="whatsapp" name="method" value="Whatsapp"><br><br>
+        <label for="country">Country</label>
+        <select name="country" id="country">
+            <option value="India">India</option>
+            <option value="USA">USA</option>
+            <option value="UK">UK</option>
+            <option value="Other">Other</option>
+        </select><br><br>
+        <label for="sub">Subject: </label><br>
+        <textarea rows="4" cols="40" name="Subject" id="sub" placeholder="Enter the Subject"></textarea><br><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
